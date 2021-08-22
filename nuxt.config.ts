@@ -5,7 +5,11 @@ const config: NuxtConfig = {
 		'@nuxt/typescript-build',
 		'nuxt-windicss',
 		'@nuxtjs/google-fonts',
+		'@nuxtjs/color-mode',
 	],
+	colorMode: {
+		classSuffix: '',
+	},
 	components: true,
 	firebase: {
 		config: {
