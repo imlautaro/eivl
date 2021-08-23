@@ -48,7 +48,7 @@ const config: NuxtConfig = {
 			},
 		],
 	},
-	modules: ['@nuxtjs/firebase'],
+	modules: ['@nuxtjs/firebase', '@nuxtjs/robots'],
 	pwa: {
 		manifest: {
 			name: 'English Irregular Verbs List',
