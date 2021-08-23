@@ -48,13 +48,19 @@ const config: NuxtConfig = {
 			},
 		],
 	},
-	modules: ['@nuxtjs/firebase', '@nuxtjs/robots'],
+	modules: ['@nuxtjs/firebase', '@nuxtjs/robots', '@nuxtjs/sitemap'],
 	pwa: {
 		manifest: {
 			name: 'English Irregular Verbs List',
 			short_name: 'EIVL',
 			theme_color: '#dc2626',
 		},
+	},
+	robots: {
+		Sitemap: 'https://english-irregular-verbs-list.web.app/sitemap.xml',
+	},
+	sitemap: {
+		hostname: 'https://english-irregular-verbs-list.web.app',
 	},
 	srcDir: 'src',
 	target: 'static',
