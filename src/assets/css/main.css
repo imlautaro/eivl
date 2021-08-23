@@ -3,9 +3,15 @@
 		@apply bg-gray-100 select-none;
 		scroll-behavior: smooth;
 	}
+	html.dark {
+		@apply bg-gray-900;
+	}
 	body {
 		@apply text-gray-900;
 		-webkit-tap-highlight-color: transparent;
+	}
+	.dark body {
+		@apply text-gray-100;
 	}
 	button,
 	input,

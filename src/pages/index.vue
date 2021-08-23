@@ -2,7 +2,7 @@
 	<div class="flex-1 overflow-y-auto w-full">
 		<table v-if="filterVerbs.length" class="min-w-full table-auto">
 			<thead>
-				<tr class="bg-white shadow sticky top-0">
+				<tr class="bg-white dark:bg-gray-800 shadow sticky top-0">
 					<th class="p-4 whitespace-nowrap">
 						Infinitive
 					</th>
@@ -17,7 +17,7 @@
 				<tr
 					v-for="doc in filterVerbs"
 					:key="doc.id"
-					class="even:bg-gray-900/5 select-text"
+					class="even:bg-gray-900/5 dark:even:bg-gray-100/5 select-text"
 				>
 					<td class="p-4 text-center">{{ doc.infinitive }}</td>
 					<td class="p-4 text-center">{{ doc.past_simple }}</td>

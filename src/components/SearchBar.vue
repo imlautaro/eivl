@@ -1,10 +1,10 @@
 <template>
-	<div class="bg-white flex items-center shadow">
+	<div class="bg-white dark:bg-gray-800 flex items-center shadow">
 		<label class="flex p-4" for="search">
 			<octicons name="search" />
 		</label>
 		<input
-			class="py-4 pr-4 w-full"
+			class="bg-transparent py-4 pr-4 w-full"
 			id="search"
 			placeholder="Search..."
 			v-model="query"

@@ -10,6 +10,7 @@ const config = defineConfig({
 		extend: {
 			colors: {
 				primary: colors.red,
+				gray: colors.gray,
 			},
 		},
 		fontFamily: {
