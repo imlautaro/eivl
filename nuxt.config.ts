@@ -53,7 +53,6 @@ const config: NuxtConfig = {
 		manifest: {
 			name: 'English Irregular Verbs List',
 			short_name: 'EIVL',
-			theme_color: '#dc2626',
 		},
 	},
 	robots: {

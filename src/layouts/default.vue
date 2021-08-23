@@ -5,3 +5,19 @@
 		<search-bar />
 	</div>
 </template>
+
+<script>
+export default {
+	head() {
+		return {
+			meta: [
+				{
+					name: 'theme-color',
+					content:
+						this.$colorMode.value == 'dark' ? '#991b1b' : '#dc2626',
+				},
+			],
+		}
+	},
+}
+</script>
