@@ -6,11 +6,16 @@ const config: NuxtConfig = {
 		'nuxt-windicss',
 		'@nuxtjs/google-fonts',
 		'@nuxtjs/color-mode',
+		'@nuxtclub/octicons',
+		'@nuxtjs/composition-api/module',
+		'@nuxtjs/pwa',
+		'vue2-script-setup-transform/nuxt',
 	],
 	colorMode: {
 		classSuffix: '',
 	},
 	components: true,
+	css: ['~/assets/css/main.css'],
 	firebase: {
 		config: {
 			apiKey: 'AIzaSyDvOb2CGC_T52YRS_lAHTBXTt1vcT7y_Bk',
@@ -26,6 +31,9 @@ const config: NuxtConfig = {
 			firestore: true,
 		},
 	},
+	generate: {
+		interval: 2000,
+	},
 	googleFonts: {
 		display: 'swap',
 		families: {
@@ -33,6 +41,13 @@ const config: NuxtConfig = {
 		},
 	},
 	modules: ['@nuxtjs/firebase'],
+	pwa: {
+		manifest: {
+			name: 'English Irregular Verbs List',
+			short_name: 'EIVL',
+			theme_color: '#dc2626',
+		},
+	},
 	srcDir: 'src',
 	target: 'static',
 }
