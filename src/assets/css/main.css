@@ -1,13 +1,13 @@
 @layer base {
 	html {
-		@apply bg-gray-100 select-none;
+		@apply bg-gray-100 duration-200 select-none;
 		scroll-behavior: smooth;
 	}
 	html.dark {
 		@apply bg-gray-900;
 	}
 	body {
-		@apply text-gray-900;
+		@apply duration-200 text-gray-900;
 		-webkit-tap-highlight-color: transparent;
 	}
 	.dark body {
