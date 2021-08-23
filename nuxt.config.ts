@@ -40,6 +40,14 @@ const config: NuxtConfig = {
 			Rubik: [400, 500, 700],
 		},
 	},
+	head: {
+		meta: [
+			{
+				name: 'google-site-verification',
+				content: 'j1UdgqW5_2PAOSo7q80f4P8tJFeCBAqfioYOZJ4kims',
+			},
+		],
+	},
 	modules: ['@nuxtjs/firebase'],
 	pwa: {
 		manifest: {
