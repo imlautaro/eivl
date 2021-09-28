@@ -39,12 +39,20 @@ const config: NuxtConfig = {
 			name: 'English Irregular Verbs List',
 			short_name: 'EIVL',
 		},
+		meta: {
+			ogHost: 'https://eivl.nuxt.club',
+			ogImage: '/featured.png',
+		},
 	},
 	robots: {
-		Sitemap: 'https://english-irregular-verbs-list.web.app/sitemap.xml',
+		Sitemap: 'https://eivl.nuxt.club/sitemap.xml',
+	},
+	router: {
+		trailingSlash: true,
 	},
 	sitemap: {
-		hostname: 'https://english-irregular-verbs-list.web.app',
+		hostname: 'https://eivl.nuxt.club',
+		trailingSlash: true,
 	},
 	srcDir: 'src',
 	supabase: {
