@@ -19,7 +19,8 @@
 			"@types/node",
 			"@nuxt/types",
 			"@nuxtjs/firebase",
-			"@nuxtjs/color-mode"
+			"@nuxtjs/color-mode",
+			"@nuxtclub/supabase"
 		]
 	},
 	"exclude": ["node_modules"]

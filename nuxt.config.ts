@@ -9,6 +9,7 @@ const config: NuxtConfig = {
 		'@nuxtclub/octicons',
 		'@nuxtjs/composition-api/module',
 		'@nuxtjs/pwa',
+		'@nuxtclub/supabase',
 	],
 	colorMode: {
 		classSuffix: '',
@@ -27,7 +28,6 @@ const config: NuxtConfig = {
 		},
 		services: {
 			analytics: true,
-			firestore: true,
 		},
 	},
 	generate: {
@@ -61,6 +61,10 @@ const config: NuxtConfig = {
 		hostname: 'https://english-irregular-verbs-list.web.app',
 	},
 	srcDir: 'src',
+	supabase: {
+		key: process.env.SUPABASE_KEY || '',
+		url: process.env.SUPABASE_URL || '',
+	},
 	target: 'static',
 }
 

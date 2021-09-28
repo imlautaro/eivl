@@ -3,18 +3,20 @@ import useSearch from '~/composables/search'
 import { Verb } from '~/models'
 
 const useVerbs = () => {
-	const { $fire } = useContext()
+	const { $supabase } = useContext()
 	const { filter } = useSearch()
 
 	const verbs = useAsync(async () => {
-		const { docs } = await $fire.firestore
-			.collection('verbs')
-			.orderBy('infinitive', 'asc')
-			.get()
-		return docs.map(doc => doc.data()) as Verb[]
+		const { data } = await $supabase
+			.from<Verb>('eivl_verbs')
+			.select('*')
+			.order('infinitive', { ascending: true })
+		return data
 	})
 
-	const filterVerbs = computed(() => verbs.value!.filter(doc => filter(doc)))
+	const filterVerbs = computed(() =>
+		verbs.value!.filter((doc) => filter(doc))
+	)
 
 	return { verbs, filterVerbs }
 }

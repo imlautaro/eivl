@@ -12,7 +12,7 @@ A Progressive Web App with a list of irregular verbs for English learners.
 
 ### Backend
 
--   [Firebase](https://firebase.google.com/)
+-   [Supabase](https://supabase.io/)
 
 ## License
 
