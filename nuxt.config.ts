@@ -9,7 +9,6 @@ const config: NuxtConfig = {
 		'@nuxtclub/octicons',
 		'@nuxtjs/composition-api/module',
 		'@nuxtjs/pwa',
-		'vue2-script-setup-transform/nuxt',
 	],
 	colorMode: {
 		classSuffix: '',

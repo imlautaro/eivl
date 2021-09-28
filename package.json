@@ -20,10 +20,9 @@
 		"@nuxt/typescript-build": "^2.1.0",
 		"@nuxtclub/octicons": "^1.4.0",
 		"@nuxtjs/color-mode": "^2.1.1",
-		"@nuxtjs/composition-api": "^0.27.0",
+		"@nuxtjs/composition-api": "^0.29.2",
 		"@nuxtjs/google-fonts": "^1.3.0",
 		"@nuxtjs/pwa": "^3.3.5",
-		"nuxt-windicss": "^1.2.3",
-		"vue2-script-setup-transform": "^0.3.1"
+		"nuxt-windicss": "^1.2.3"
 	}
 }
