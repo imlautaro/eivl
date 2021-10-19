@@ -10,7 +10,7 @@
 			<transition name="dropdown">
 				<div
 					v-if="showDropdown"
-					class="absolute bg-white dark:(bg-gray-800 text-gray-100) duration-200 py-2 right-0 rounded-lg shadow-md text-gray-900"
+					class="absolute bg-white dark:(bg-gray-800 text-gray-100) duration-200 overflow-hidden py-2 right-0 rounded-2xl shadow-md text-gray-900"
 				>
 					<div
 						class="duration-200 flex items-center justify-between p-4 space-x-8 w-full"
