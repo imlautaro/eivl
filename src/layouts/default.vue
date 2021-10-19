@@ -3,6 +3,7 @@
 		<app-bar />
 		<nuxt keep-alive />
 		<search-bar />
+		<refresh-to-update />
 	</div>
 </template>
 
