@@ -5,7 +5,7 @@
 		<span class="font-bold text-2xl">EIVL</span>
 		<div class="relative">
 			<button @click="showDropdown = !showDropdown" class="icon-btn">
-				<octicons name="kebab-horizontal" />
+				<ph-dots-three-vertical-bold />
 			</button>
 			<transition name="dropdown">
 				<div
@@ -16,7 +16,7 @@
 						class="duration-200 flex items-center justify-between p-4 space-x-8 w-full"
 					>
 						<div class="flex items-center space-x-4">
-							<octicons name="moon" />
+							<ph-moon-bold />
 							<span class="flex-1 whitespace-nowrap">
 								Dark mode
 							</span>
@@ -32,12 +32,12 @@
 						target="_blank"
 					>
 						<div class="flex items-center space-x-4">
-							<octicons name="mark-github" />
+							<fa-brands-github />
 							<span class="flex-1 whitespace-nowrap">
 								GitHub
 							</span>
 						</div>
-						<octicons name="link-external" />
+						<ph-arrow-square-out-bold />
 					</a>
 				</div>
 			</transition>
@@ -58,6 +58,10 @@
 
 <script setup>
 import { ref, useContext } from '@nuxtjs/composition-api'
+import PhDotsThreeVerticalBold from '~icons/ph/dots-three-vertical-bold'
+import PhMoonBold from '~icons/ph/moon-bold'
+import PhArrowSquareOutBold from '~icons/ph/arrow-square-out-bold'
+import FaBrandsGithub from '~icons/fa-brands/github'
 
 const showDropdown = ref(false)
 

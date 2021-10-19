@@ -6,7 +6,7 @@ const config: NuxtConfig = {
 		'nuxt-windicss',
 		'@nuxtjs/google-fonts',
 		'@nuxtjs/color-mode',
-		'@nuxtclub/octicons',
+		['unplugin-icons/nuxt', { scale: 1.5 }],
 		'@nuxtjs/composition-api/module',
 		'@nuxtjs/pwa',
 		'@nuxtclub/supabase',
