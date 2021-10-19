@@ -4,9 +4,11 @@
 	>
 		<span class="font-bold text-2xl">EIVL</span>
 		<div class="relative">
-			<button @click="showDropdown = !showDropdown" class="icon-btn">
-				<ph-dots-three-vertical-bold />
-			</button>
+			<div class="dark flex">
+				<ui-icon-button @click="showDropdown = !showDropdown">
+					<ph-dots-three-vertical-bold />
+				</ui-icon-button>
+			</div>
 			<transition name="dropdown">
 				<div
 					v-if="showDropdown"

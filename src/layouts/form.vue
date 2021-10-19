@@ -1,12 +1,9 @@
 <template>
 	<div>
 		<div class="px-4 py-2">
-			<nuxt-link
-				class="active:bg-gray-900/10 active:dark:bg-gray-100/10 flex p-3 rounded-2xl w-min"
-				to="/"
-			>
+			<ui-icon-button to="/">
 				<ph-arrow-left-bold />
-			</nuxt-link>
+			</ui-icon-button>
 		</div>
 		<div class="container max-w-sm py-8 px-4">
 			<nuxt class="flex flex-col space-y-4" />
