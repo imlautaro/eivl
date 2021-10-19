@@ -16,6 +16,7 @@
 	"devDependencies": {
 		"@iconify-json/fa-brands": "^1.0.2",
 		"@iconify-json/ph": "^1.0.1",
+		"@nuxt/bridge": "npm:@nuxt/bridge-edge",
 		"@nuxt/types": "^2.15.8",
 		"@nuxt/typescript-build": "^2.1.0",
 		"@nuxtclub/supabase": "^1.1.1",

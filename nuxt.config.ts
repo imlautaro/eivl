@@ -1,6 +1,6 @@
-import { NuxtConfig } from '@nuxt/types'
+import { defineNuxtConfig } from '@nuxt/bridge'
 
-const config: NuxtConfig = {
+export default defineNuxtConfig({
 	buildModules: [
 		'@nuxt/typescript-build',
 		'nuxt-windicss',
@@ -60,6 +60,4 @@ const config: NuxtConfig = {
 		url: process.env.SUPABASE_URL || '',
 	},
 	target: 'static',
-}
-
-export default config
+})

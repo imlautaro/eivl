@@ -3,6 +3,7 @@ node_modules/
 
 # NuxtJS
 .nuxt/
+.output/
 dist/
 sw.*
 
