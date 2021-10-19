@@ -14,6 +14,9 @@ const config = defineConfig({
 				primary: colors.red,
 				gray: colors.gray,
 			},
+			screens: {
+				nt: { raw: '(hover: hover)' },
+			},
 		},
 		fontFamily: {
 			sans: ['Rubik', 'sans-serif'],
