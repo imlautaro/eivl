@@ -2,7 +2,7 @@
 
 An open source app with a complete list of irregular verbs for English learners.
 
-# Features
+## Features
 
 -   More than 100 verbs
 -   Free for any purpose of use, whether personal, commercial or educational
