@@ -26,6 +26,17 @@
 							@change="toggleColorMode"
 						/>
 					</div>
+					<nuxt-link
+						to="/suggest-a-verb/"
+						class="active:bg-gray-900/5 dark:active:bg-gray-100/5 duration-200 flex items-center justify-between p-4 space-x-8 w-full"
+					>
+						<div class="flex items-center space-x-4">
+							<ph-list-plus-bold />
+							<span class="flex-1 whitespace-nowrap">
+								Suggest a verb
+							</span>
+						</div>
+					</nuxt-link>
 					<a
 						class="active:bg-gray-900/5 dark:active:bg-gray-100/5 duration-200 flex items-center justify-between p-4 space-x-8 w-full"
 						href="https://github.com/imlautaro/eivl"
@@ -62,6 +73,7 @@ import PhDotsThreeVerticalBold from '~icons/ph/dots-three-vertical-bold'
 import PhMoonBold from '~icons/ph/moon-bold'
 import PhArrowSquareOutBold from '~icons/ph/arrow-square-out-bold'
 import FaBrandsGithub from '~icons/fa-brands/github'
+import PhListPlusBold from '~icons/ph/list-plus-bold'
 
 const showDropdown = ref(false)
 

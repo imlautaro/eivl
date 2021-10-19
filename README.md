@@ -14,6 +14,8 @@ A Progressive Web App with a list of irregular verbs for English learners.
 
 -   [Supabase](https://supabase.io/)
 
+## Thank you
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
