@@ -1,8 +1,10 @@
 import { defineConfig } from 'windicss/helpers'
 import colors from 'windicss/colors'
+import native from 'windi-native'
 
 const config = defineConfig({
 	darkMode: 'class',
+	plugins: [native],
 	theme: {
 		container: {
 			center: true,

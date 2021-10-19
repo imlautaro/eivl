@@ -1,29 +1,15 @@
 @layer base {
 	html {
-		@apply bg-gray-100 duration-200 select-none;
-		scroll-behavior: smooth;
+		@apply bg-gray-100 duration-200;
 	}
 	html.dark {
 		@apply bg-gray-900;
 	}
 	body {
 		@apply duration-200 text-gray-900;
-		-webkit-tap-highlight-color: transparent;
 	}
 	.dark body {
 		@apply text-gray-100;
-	}
-	button,
-	input,
-	h1,
-	textarea,
-	select,
-	div,
-	a {
-		@apply outline-none !important;
-		&:focus {
-			@apply outline-none !important;
-		}
 	}
 }
 
