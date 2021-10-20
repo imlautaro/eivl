@@ -40,6 +40,18 @@
 							</span>
 						</div>
 					</nuxt-link>
+					<button
+						v-if="shareSupport"
+						@click="share()"
+						class="active:bg-gray-900/5 dark:active:bg-gray-100/5 duration-200 flex items-center justify-between p-4 space-x-8 w-full"
+					>
+						<div class="flex items-center space-x-4">
+							<ph-share-network-bold />
+							<span class="flex-1 whitespace-nowrap">
+								Share
+							</span>
+						</div>
+					</button>
 					<a
 						class="active:bg-gray-900/5 dark:active:bg-gray-100/5 duration-200 flex items-center justify-between p-4 space-x-8 w-full"
 						href="https://github.com/imlautaro/eivl"
@@ -71,12 +83,13 @@
 </style>
 
 <script setup>
-import { ref, useContext } from '@nuxtjs/composition-api'
+import { ref, useContext, onMounted } from '@nuxtjs/composition-api'
 import PhDotsThreeVerticalBold from '~icons/ph/dots-three-vertical-bold'
 import PhMoonBold from '~icons/ph/moon-bold'
 import PhArrowSquareOutBold from '~icons/ph/arrow-square-out-bold'
 import FaBrandsGithub from '~icons/fa-brands/github'
 import PhListPlusBold from '~icons/ph/list-plus-bold'
+import PhShareNetworkBold from '~icons/ph/share-network-bold'
 
 const showDropdown = ref(false)
 
@@ -88,5 +101,21 @@ const toggleColorMode = () => {
 	} else {
 		$colorMode.preference = 'dark'
 	}
+}
+
+const shareSupport = ref(false)
+
+onMounted(() => {
+	if (navigator.share) {
+		shareSupport.value = true
+	}
+})
+
+const share = () => {
+	navigator.share({
+		title: 'English Irregular Verbs List',
+		text: 'I recommend this app',
+		url: 'https://eivl.nuxt.club/',
+	})
 }
 </script>
