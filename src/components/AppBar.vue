@@ -115,7 +115,7 @@ const share = () => {
 	navigator.share({
 		title: 'English Irregular Verbs List',
 		text: 'I recommend this app',
-		url: this.url,
+		url: 'https://eivl.nuxt.club/',
 	})
 }
 </script>
