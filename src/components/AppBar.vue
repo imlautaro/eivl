@@ -3,6 +3,7 @@
 		class="bg-primary-600 dark:(bg-primary-800 text-gray-100) flex items-center justify-between p-4 shadow text-white z-10"
 	>
 		<span class="font-bold text-2xl">EIVL</span>
+		<desktop-search-bar />
 		<div class="relative">
 			<div class="dark flex">
 				<ui-icon-button @click="showDropdown = !showDropdown">

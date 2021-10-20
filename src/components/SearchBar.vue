@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="bg-primary-600 dark:bg-primary-800 flex items-center shadow text-white"
+		class="bg-primary-600 dark:bg-primary-800 flex items-center md:hidden shadow text-white"
 	>
 		<label class="flex p-4" for="search">
 			<ph-magnifying-glass-bold />
